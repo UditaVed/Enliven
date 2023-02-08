@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero min-h-screen text-white">
           <div className="hero-content md:pr-0  gap-4 flex-row-reverse">
             <img
-              src="Pic.png"
+              src="hero/Pic.png"
               className="md:w-[40vw] md:h-[60vw] rounded-lg shadow-2xl"
             />
             <div>
@@ -51,7 +51,7 @@ const Hero = () => {
               </button>
             </div>
             <div>
-            <img src="People.png" />
+            <img src="hero/People.png" />
             </div>
           </div>
         </div>
