@@ -12,7 +12,7 @@ const Navbar = () => {
         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 bg-white rounded-box w-52">
           <li><Link to="/laywer">LAWYER</Link></li>
           <li >
-            <Link to="/ngo" className="justify-between">
+            <Link to="/Search" className="justify-between">
               NGO
             </Link>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
     <div className="navbar-center hidden lg:flex lg:w-fit lg:h-full lg:font-    ">
       <ul className="menu menu-horizontal  border-black h-full border-x">
         <li className=' border-black h-full border-x '><Link to="/lawyer" className='px-10  active:bg-black hover:bg-yellow-100 '>LAWYER</Link></li>
-        <li className=' border-black h-full border-x '><Link to="/ngo" className='px-10  active:bg-black hover:bg-yellow-100 '>NGO</Link></li>
+        <li className=' border-black h-full border-x '><Link to="/Search" className='px-10  active:bg-black hover:bg-yellow-100 '>NGO</Link></li>
         <li className=' border-black h-full border-x '><Link to="/blog" className='px-10  active:bg-black hover:bg-yellow-100 '>BLOG</Link></li>
         <li className=' border-black h-full border-x '><Link to="/contact" className='px-10  active:bg-black hover:bg-yellow-100 '>CONTACT US</Link></li> 
       </ul>
