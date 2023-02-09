@@ -11,7 +11,7 @@ import {
 
 const Lawyer = () => {
   return (
-    <div>
+    <div className="bg-white">
     <div className="page-heading bg-dark bg-gradient text-light pt-4 pb-4 container-fluid">
       <h1 className="legalAd ps-5">LEGAL ADVICE</h1>
     </div>
@@ -81,7 +81,7 @@ const Lawyer = () => {
           <div className="cards-inner-content">
             Get legal answers from laywers. It's quick, easy and anonymous!
           </div>
-          <button className="cards-button">
+          <button className="cards-button ">
             <FontAwesomeIcon icon={faMessage} className="me-3" />
             Ask here
           </button>
