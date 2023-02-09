@@ -1,0 +1,45 @@
+.black_script {
+    background-color: black;
+    color: white;
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10vh;
+    margin-top: 0;
+    text-align: left;
+    padding-left: 5%;
+}
+img{
+height: 50%;
+  border: 1px solid black;
+}
+h1 {
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 5%;
+}
+
+h3 {
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    text-align: left;
+    padding-left: 5%;
+}
+.mk{height: 80vh;}
+.car{
+    
+box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25)!important;
+border:2px solid rgb(255, 230, 9)!important;
+}
+a{
+    text-decoration: none!important;
+    color: black!important;
+}
+p{
+    text-align: justify;
+}
+.car:hover{
+    background-color: rgb(251, 255, 23);
+}
