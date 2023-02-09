@@ -1,5 +1,10 @@
-.nav-btn {
-  background-color: rgb(255, 231, 15) !important;
+.mainDiv{
+  font-family: serif;
+}
+
+.page-heading{
+  background-color: black;
+  font-size: 3rem;
 }
 
 .latestAns {
@@ -45,6 +50,7 @@
 }
 
 .cards-inner-content {
+  font-size: 3vh;
   margin-top: 3vh;
   color: rgba(255, 255, 255, 0.738);
 }
@@ -52,6 +58,7 @@
 .cards-button {
   margin-top: 8vh;
   width: 15vw;
+  height: 5vh;
   border-radius: 30px;
   position: relative;
   background: white;
@@ -76,7 +83,7 @@
   left: -1px;
   border-top: 5px solid rgb(255, 231, 15);
   border-left: 5px solid rgb(255, 231, 15);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .cards-button:before {
   bottom: -1px;
@@ -89,7 +96,7 @@
   background-color: rgb(255, 231, 15);
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .cards-button:hover:before,
 .cards-button:hover:after {
@@ -131,6 +138,12 @@
     margin-top: 5vh;
     width: 20vw;
   }
+}
+@media all and (max-width: 768px) {
+  .cards-button {
+    font-size: 2vh;
+  }
+
 }
 @media all and (max-width: 426px) {
   .cards-button {

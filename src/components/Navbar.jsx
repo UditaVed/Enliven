@@ -32,7 +32,7 @@ const Navbar = () => {
       </ul>
     </div>
     <div className="navbar-end hidden sm:flex pr-2 lg:w-fit ">
-      <Link to="/" className="btn text-black bg-[#FFF7B2]">Get started</Link>
+      <Link to="/" className="btn text-black bg-[#FFF7B2] ">Get started</Link>
     </div>
   </div>
   )
