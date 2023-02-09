@@ -1,5 +1,6 @@
 import React from "react";
 import "./legal.css";
+import Head from '../components/Head';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,13 +14,13 @@ const Lawyer = () => {
   return (
     <div className='mainDiv'>
       <div className="bg-white">
-        <div className="page-heading text-light container-fluid">
-          <h1 className="legalAd ps-4 pt-5 pb-5">LEGAL ADVICE</h1>
-        </div>
+      <Head
+      topic="Legal Advice"
+      title="Know Your Rights"
+      about="Get legal help from professional "
+      />
         <div className="latestAns border rounded-5 border-dark mt-5 ms-5 me-5">
-          <div className="heading-latest mt-4 ms-4">
-            <h3 className="text-decoration-underline fs-3">Latest Answers:</h3>
-          </div>
+          
           <div className="content-latest-top mt-4 ms-4">
             <Row>
               <Col>

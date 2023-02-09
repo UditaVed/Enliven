@@ -3,6 +3,11 @@ footer {
     color: white;
 }
 
+.btn:hover{
+    background-color: #fef9c3;
+    color: white;
+}
+
 input {
     display: block;
     width: 100%;
@@ -26,6 +31,9 @@ input {
 
 
 
+}
+.Yellow{
+    color: #fef9c3;
 }
 
 .txt-content h1 {

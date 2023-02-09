@@ -25,10 +25,10 @@ const Navbar = () => {
     </div>
     <div className="navbar-center hidden lg:flex lg:w-fit lg:h-full lg:font-    ">
       <ul className="menu menu-horizontal  border-black h-full border-x">
-        <li className=' border-black h-full border-x '><Link to="/lawyer" className='px-10  active:bg-black hover:bg-yellow-100 '>LAWYER</Link></li>
-        <li className=' border-black h-full border-x '><Link to="/ngo" className='px-10  active:bg-black hover:bg-yellow-100 '>NGO</Link></li>
-        <li className=' border-black h-full border-x '><Link to="/blog" className='px-10  active:bg-black hover:bg-yellow-100 '>BLOG</Link></li>
-        <li className=' border-black h-full border-x '><Link to="/contact" className='px-10  active:bg-black hover:bg-yellow-100 '>CONTACT US</Link></li> 
+        <li className=' border-black h-full border-x '><Link to="/lawyer" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>LAWYER</Link></li>
+        <li className=' border-black h-full border-x '><Link to="/ngo" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>NGO</Link></li>
+        <li className=' border-black h-full border-x '><Link to="/blog" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>BLOG</Link></li>
+        <li className=' border-black h-full border-x '><Link to="/contact" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>CONTACT US</Link></li> 
       </ul>
     </div>
     <div className="navbar-end hidden sm:flex pr-2 lg:w-fit ">

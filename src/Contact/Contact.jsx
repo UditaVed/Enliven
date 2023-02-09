@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="col-sm-8 ">
                     <div className="container txt-content text-white">
                         <h1 className="underline">Contact Us</h1>
-                        <h1 className="mt-5"><span className="text-warning">YOUR IDEA </span>IS OUR <br/> SOLUTION</h1>
+                        <h1 className="mt-5"><span className="Yellow">YOUR IDEA </span>IS OUR <br/> SOLUTION</h1>
                     </div>
                 </div>
                 <div className="Specify_border col-sm-4 bg-white mb-5 container form_fill border border-dark border-top-5">
@@ -30,7 +30,7 @@ const Contact = () => {
                             <input type="text" id="formGroupExampleInput2" />
                         </div>
                         <div className="text-right mb-5 d-flex justify-content-end">
-                            <button type="submit" className="btn btn-warning rounded-0 ">Send Message</button>
+                            <button type="submit" className="btn btn-warning rounded-0  ">Send Message</button>
                         </div>
 
                     </form>

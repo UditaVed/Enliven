@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Head from '../components/Head';
 import data from './data';
 import './Search.css'
 const NGO = () => {
@@ -14,9 +15,11 @@ const NGO = () => {
 
   return (
    <div className="all">
-        <div className="black_script">NGO'S</div>
-      <h1>Reach Your Aid</h1>
-      <h4>Find Help Near you!</h4>
+       <Head
+       topic="NGO"
+       title="Reach Your Aid"
+       about="Find Help Near you!"
+       />
       <hr/>
         <section className="py-4 container">
         
