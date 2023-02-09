@@ -4,7 +4,7 @@ module.exports = {
     "./index.html",
     "./src/Hero/*.{js,ts,jsx,tsx}",
     "./src/Blog/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/Blog/**/*.{js,ts,jsx,tsx}",
     "./src/components/*.{js,ts,jsx,tsx}",
   ],
   theme: {
