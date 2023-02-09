@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
 import Lawyer from "./Lawyer/Lawyer";
-import NGO from "./NGO/NGO";
+import Search from "./NGO/Search";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,7 +18,7 @@ function App() {
     <Routes>
           <Route exact path="/" element={<Hero />}></Route>
           <Route path="/blog" element={<Blog/>}></Route>
-          <Route path="/ngo" element={<NGO/>}></Route>
+          <Route path="/Search" element={<Search/>}></Route>
           <Route path="/lawyer" element={<Lawyer/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
