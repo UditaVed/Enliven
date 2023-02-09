@@ -13,7 +13,7 @@ const Search=() => {
    });
 
   return (
-   <div>
+   <div id="Search">
         <div className="black_script">NGO'S</div>
       <h1>Reach Your Aid</h1>
       <h4>Find Help Near you!</h4>
