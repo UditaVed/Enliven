@@ -11,16 +11,19 @@ Contact page for users to communicate with the website's creators and administra
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-# Clone the repository
-```git clone https://github.com/UditaVed/Enliven.git
+## Clone the repository
 ```
-# Install the necessary dependencies
-```npm install
+git clone https://github.com/UditaVed/Enliven.git
 ```
-# Start the development server
-```npm start
+## Install the necessary dependencies
+```
+npm install
+```
+## Start the development server
+```
+npm start
 ```
 ## Built With
-# React - Front-end library used
-# Node.js/Express js - Back-end technology used
-# MongoDB - Database
+###### React - Front-end library used
+###### Node.js/Express js - Back-end technology used
+###### MongoDB - Database
