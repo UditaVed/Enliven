@@ -15,7 +15,7 @@ cardData:[
         title: 'HUMSAFAR',
         desc:' Address: C-80, Flat no. 2, Sector -A, Mahanagar',
         desc2:'Lucknow, Uttar Pradesh, India - 226006',
-        contact:'Contact No: 0522-2205215, 4062119',
+        contact:'Contact No: 0522-2205215',
         link:'https://www.humsafarindia.org/'
 
     },
