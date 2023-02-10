@@ -21,7 +21,7 @@ const NGO = () => {
        about="Find Help Near you!"
        />
       <div className="bg-black w-[90vw] h-[1.4px] ml-5"></div>
-        <section className="py-4 container">
+        <section className="py-5 container">
         
             <div className="row justify-content-center">
                
