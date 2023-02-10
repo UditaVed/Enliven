@@ -45,7 +45,7 @@ p{
 .car:hover{
     background-color: rgb(251, 255, 23);
 }
-@media only screen and (max-width: 475px) and (min-width: 767px) 
+@media only screen and (max-width: 767px) and (min-width: 475px) 
 {
     .ngo_image{
 height: 6vh!important;
