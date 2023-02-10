@@ -41,7 +41,7 @@ const NGO = () => {
                <div className="  col-11 col-md-6 col-lg-4 mx-0 mk mb-5 ">
                     <a href={item.link}><div className="card car p-2 overflow-hidden h-100 shadow">
                         <img className="ngo_image" src={item.img} className="card-img-top"/>
-                        <div className="card-body">
+                        <div className="card-body description">
                             <h3 className="card-title"><b>{item.title}</b></h3>
                             <p className="card-text"><b>{item.desc}<br></br>{item.desc2}</b></p>
                              <p className="card-text"><b>{item.contact}</b></p>
