@@ -15,12 +15,12 @@ const NGO = () => {
 
   return (
    <div className="all">
-       <Head
+       <Head className="edit_head"
        topic="NGO"
        title="Reach Your Aid"
        about="Find Help Near you!"
        />
-      <hr/>
+      <div className="bg-black w-[90vw] h-[1.4px] ml-5"></div>
         <section className="py-4 container">
         
             <div className="row justify-content-center">
