@@ -48,7 +48,6 @@ p{
 @media only screen and (max-width: 475px) and (min-width: 767px) 
 {
     .ngo_image{
-height: 20%!important;
-  border: 1px solid black;
+height: 6vh!important;
 }
 }
