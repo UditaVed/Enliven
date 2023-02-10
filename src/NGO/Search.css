@@ -34,6 +34,7 @@ h3 {
     
 box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25)!important;
 border:2px solid rgb(255, 230, 9)!important;
+    border-radius:0!important;
 }
 a{
     text-decoration: none!important;
@@ -43,7 +44,7 @@ p{
     text-align: left;
 }
 .car:hover{
-    background-color: rgb(251, 255, 23);
+    background-color: #FFF7B2;
 }
 @media only screen and (max-width: 767px) and (min-width: 475px) 
 {
