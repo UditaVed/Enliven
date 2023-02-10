@@ -13,7 +13,7 @@ background-color:white;}.black_script {
 }
 .ngo_image{
 height: 40%!important;
-  border: 1px solid black;
+  border:3px solid rgb(0, 0, 0)!important;
 }
 h1 {
     font-family: 'Kaisei HarunoUmi';
