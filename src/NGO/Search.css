@@ -22,7 +22,8 @@ h1 {
     text-align: left;
     padding-left: 5%;
 }
-
+.description{height:50%;
+}
 h3 {
     font-family: 'Kaisei HarunoUmi';
     font-style: normal;
