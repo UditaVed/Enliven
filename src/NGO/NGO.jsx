@@ -27,7 +27,7 @@ const NGO = () => {
                
                <div className="col-12 mb-5">
                <div className="mb-3 col-4 mx-auto text-center">
-                <label className="form-lable h3"><b>Search</b></label>
+                <label className="form-lable h3"><b>Search NGO's Near You!</b></label>
                  <input className="form-control"
                         type="text"
                         value={filter}
