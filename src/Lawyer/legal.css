@@ -1,14 +1,14 @@
-.mainDiv{
+.mainDiv {
   font-family: serif;
 }
 
-.page-heading{
+.page-heading {
   background-color: black;
   font-size: 3rem;
 }
 
 .latestAns {
-  box-shadow: 10px 10px 15px -10px black;
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
 }
 
 .cardsBtn {
@@ -20,7 +20,7 @@
   width: 50vh;
   border: 2px solid black;
   border-radius: 30px;
-  box-shadow: 10px 10px 15px -10px black;
+  box-shadow: 40px 35px 60px -15px rgba(0, 0, 0, 0.3);
 }
 
 .card1 {
@@ -65,7 +65,7 @@
   font-size: 18px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: all 1s;
+  transition: all 0.7s;
   color: rgb(28, 28, 26);
 }
 .cards-button:after,
@@ -74,26 +74,25 @@
   width: 10px;
   height: 10px;
   position: absolute;
-  border: 0px solid rgb(255, 231, 15);
-  transition: all 1s;
-  
+  border: 0px solid #fef9c3;
+  transition: all 0.7s;
 }
 .cards-button:after {
   top: -1px;
   left: -1px;
-  border-top: 5px solid rgb(255, 231, 15);
-  border-left: 5px solid rgb(255, 231, 15);
+  border-top: 5px solid #fef9c3;
+  border-left: 5px solid #fef9c3;
   color: rgb(0, 0, 0);
 }
 .cards-button:before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 5px solid rgb(255, 231, 15);
-  border-right: 5px solid rgb(255, 231, 15);
+  border-bottom: 5px solid #fef9c3;
+  border-right: 5px solid #fef9c3;
   color: yellow;
 }
 .cards-button:hover {
-  background-color: rgb(255, 231, 15);
+  background-color: #fef9c3;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   color: rgb(0, 0, 0);
@@ -143,7 +142,6 @@
   .cards-button {
     font-size: 2vh;
   }
-
 }
 @media all and (max-width: 426px) {
   .cards-button {

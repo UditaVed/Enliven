@@ -43,8 +43,8 @@ const NGO = () => {
                         <img className="ngo_image card-img-top" src={item.img} />
                         <div className="card-body description">
                             <h3 className="card-title"><b>{item.title}</b></h3>
-                            <p className="card-text"><b>{item.desc}<br></br>{item.desc2}</b></p>
-                             <p className="card-text"><b>{item.contact}</b></p>
+                            <p className="card-text">{item.desc}<br></br>{item.desc2}</p>
+                             <p className="card-text">{item.contact}</p>
                         </div>
 
                     </div></a>
