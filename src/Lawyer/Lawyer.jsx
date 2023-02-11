@@ -15,13 +15,13 @@ const Lawyer = () => {
     <div className='mainDiv'>
       <div className="bg-white">
       <Head
-      topic="Legal Advice"
+      topic="LEGAL ADVICE"
       title="Know Your Rights"
       about="Get legal help from professional "
       />
         <div className="latestAns border rounded-5 border-dark mt-5 ms-5 me-5">
           
-          <div className="content-latest-top mt-4 ms-4">
+          <div className="content-latest-top mt-4 ms-4 me-4">
             <Row>
               <Col>
                 <p className="fw-bold">
