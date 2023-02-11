@@ -43,7 +43,7 @@ a{
 }
 p{
     text-align: left;
-     font-weight: 300;
+     font-weight: 300!important;
 }
 .car:hover{
     background-color: #FFF7B2;
