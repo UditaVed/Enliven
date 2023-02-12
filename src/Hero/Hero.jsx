@@ -32,21 +32,19 @@ const Hero = () => {
       <div div className="md:hidden lg:block  ">
         <div className="hero place-items-end justify-center min-h-screen bg-black text-white items-center lg:items-end">
           <div className="hero-content text-center flex flex-col">
-            <div className="max-w-md">
+            <div className="max-w-md text-center">
               <h6 className="text-md italic pb-20">
                 We Help <span className="text-[#FFF7B2]">People</span> to get
                 what they <span className="text-[#FFF7B2]">Deserve</span>
               </h6>
-              <h1 className="text-5xl font-bold">
+              <h1 className="text-5xl font-bold text-center">
                 Domestic Worker's Life{" "}
                 <span className="text-[#FFF7B2]">Matter</span>
               </h1>
-              <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+              <p className="py-6 text-center">
+              Domestic workers role in society and their contributions must be acknowledged. They deserve fair treatment safe working conditions, and respect . They should be valued.
               </p>
-              <button className="btn bg-yellow-100 text-black  hover:text-white ">
+              <button className="btn bg-yellow-100 text-black  hover:bg-white   ">
                 Tutorial
               </button>
             </div>
