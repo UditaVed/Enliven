@@ -25,7 +25,7 @@ const Navbar = () => {
     </div>
     <div className="navbar-center hidden lg:flex lg:w-fit lg:h-full">
       <ul className="menu menu-horizontal  border-black h-full border-x">
-        <li className=' border-black h-full border-x '><Link to="/lawyer" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>LAWYER</Link></li>
+        <li className=' border-black h-full border-x '><Link to="/lawyer" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>LEGAL ADVICE</Link></li>
         <li className=' border-black h-full border-x '><Link to="/ngo" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>NGO</Link></li>
         <li className=' border-black h-full border-x '><Link to="/blog" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>BLOG</Link></li>
         <li className=' border-black h-full border-x '><Link to="/contact" className='px-10  active:bg-yellow-200 hover:bg-yellow-100 '>CONTACT US</Link></li> 
