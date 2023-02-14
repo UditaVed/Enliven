@@ -12,7 +12,7 @@ background-color:white;}.black_script {
     padding-left: 5%;
 }
 .ngo_image{
-height: 40%!important;
+height: 50%!important;
   border:3px solid rgb(0, 0, 0)!important;
 }
 h1 {
@@ -51,6 +51,6 @@ p{
 @media only screen and (max-width: 767px) and (min-width: 475px) 
 {
     .ngo_image{
-height: 6vh!important;
+height: 12vh!important;
 }
 }
