@@ -3,6 +3,7 @@ import "./legal.css";
 import Head from '../components/Head';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMessage,
@@ -85,10 +86,12 @@ const Lawyer = () => {
               <div className="cards-inner-content">
                 Get legal answers from laywers. It's quick, easy and anonymous!
               </div>
+              <Link to="/q" className="justify-between">
               <button className="cards-button ">
-                <FontAwesomeIcon icon={faMessage} className="me-3" />
-                Ask here
-              </button>
+              <FontAwesomeIcon icon={faMessage} className="me-3" />
+              Ask here
+            </button>
+            </Link> 
             </div>
           </div>
           <div className="cards card2">

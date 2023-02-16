@@ -5,6 +5,7 @@ module.exports = {
     "./src/Hero/*.{js,ts,jsx,tsx}",
     "./src/Blog/*.{js,ts,jsx,tsx}",
     "./src/Blog/**/*.{js,ts,jsx,tsx}",
+    "./src/Q/**/*.{js,ts,jsx,tsx}",
     "./src/components/*.{js,ts,jsx,tsx}",
   ],
   theme: {

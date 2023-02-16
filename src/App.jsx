@@ -7,6 +7,7 @@ import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
 import Lawyer from "./Lawyer/Lawyer";
 import NGO from "./NGO/NGO";
+import Q from "./Q/Q";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
           <Route path="/ngo" element={<NGO/>}></Route>
           <Route path="/lawyer" element={<Lawyer/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/q" element={<Q/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -139,21 +139,22 @@ app.post("/view/:id/replies", (req, res) => {
     });
     reply.save((err, result) => {
         if (err) {
-            console.log(err);
+            console.lof(err);
 
         }
         else {
-            console.log(result)
+            console.log("result",result.Replies)
             Que.findById(req.params.id, (err, Que) => {
                 if (err) {
-                    console.lof(err);
+                    console.lof=g(err);
                 } else {
 
 
-                    Que.Replies.push(result);
+                    Que.Replies.push(JSON.stringify(result.reply));
                     Que.save();
-                    console.log(Que.Replies)
-                    // console.log(result)
+                    console.log("heelo",Que.Replies[1].reply)
+                    console.log("resultsasas",JSON.stringify(result.Replies))
+                    console.log("results happy hello answer",JSON.stringify(result.reply))
                     res.redirect("/")
 
 

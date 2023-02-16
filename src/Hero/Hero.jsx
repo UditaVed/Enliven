@@ -21,9 +21,11 @@ const Hero = () => {
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
-              <button className="btn bg-yellow-100 text-black  hover:text-white">
-                Tutorial
-              </button>
+            <a href="https://www.youtube.com/watch?v=mlXmou8OK20&feature=youtu.be">
+            <button className="btn bg-yellow-100 text-black  hover:text-white">
+            Tutorial
+            </button>
+            </a>  
             </div>
           </div>
         </div>
@@ -44,9 +46,11 @@ const Hero = () => {
               <p className="py-6 text-center">
               Domestic workers role in society and their contributions must be acknowledged. They deserve fair treatment safe working conditions, and respect . They should be valued.
               </p>
-              <button className="btn bg-yellow-100 text-black  hover:bg-white   ">
-                Tutorial
-              </button>
+             <a href="https://www.youtube.com/watch?v=mlXmou8OK20&feature=youtu.be">
+             <button className="btn bg-yellow-100 text-black  hover:bg-white   ">
+             Tutorial
+             </button>
+             </a> 
             </div>
             <div>
             <img src="hero/People.png" />
