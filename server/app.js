@@ -1,183 +1,95 @@
 
-const express = require('express')
-const bodyParser = require('body-parser')
-
-// Using Node.js `require()`
+const express = require('express');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const { post } = require('request');
+const app = express();
+const port = process.env.PORT || 3000;
 
-mongoose.connect('mongodb://127.0.0.1:27017/Project_exh');
+mongoose.connect("mongodb+srv://Ravi02rr:slrbkMeyLMxjBfs3@cluster0.pa8zqtm.mongodb.net/?retryWrites=true&w=majority", {
+    dbName: "backend",
+})
+    .then(() => console.log("data base connected"))
+    .catch((e) => console.log(e));
 
-const app = express()
-const port = 3000
 app.set('view engine', 'ejs');
-app.use(express.static("public"));
+app.set('views', './views');
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-const newQUe = "how to get rid of this case...."
-
-const QueSchema = new mongoose.Schema({
-    title: String,
-    Replies: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            Ref: 'Reply'
-        }
-    ]
-
-})
-
-
-const Que = mongoose.model("Question", QueSchema)
-
-
-// const newQue = new Que({
-//     title: newQUe
-
-// })
-// newQue.save()
-
-
-
-app.get('/', (req, res) => {
-    Que.find({}, (err, questions) => {
-        if (err) {
-            console.log(err)
-
-        } else {
-
-            res.render("home", {
-                questions: questions
-            });
-
-        }
-
-    })
-
-})
-
-// show all questions
-app.get('/view', (req, res) => {
-    Que.find({}, (err, questions) => {
-        if (err) {
-            console.log(err)
-
-        } else {
-
-            res.render("home", {
-                questions: questions,
-            });
-
-        }
-
-    })
-
-})
-
-
-// post your question here
-app.get("/new", (req, res) => {
-    res.render("ask_que")
-});
-
-
-// mongo post new question
-app.post("/", (req, res) => {
-    const title = req.body.question
-
-    const ask = new Que({
-        title: title
-    })
-    ask.save((err, data) => {
-        if (err) {
-            console.log(err)
-
-        } else {
-            res.redirect("/")
-        }
-    })
-
-});
-
-
-
-
-// new section for every questions
-
-
-app.get("/view/:id", (req, res) => {
-    Que.findById(req.params.id).populate('Replies').exec((err, Question) => {
-        if (err) {
-            console.log(err)
-        } else {
-
-            console.log(Question)
-
-            res.render("question", { Question: Question })
-
-
-        }
-    })
-})
-
-// comment add to post
-
 const replySchema = new mongoose.Schema({
-    reply: String
-})
+    reply: String,
+});
 
-const Reply = mongoose.model("Reply", replySchema);
+const Reply = mongoose.model('Reply', replySchema);
 
+const questionSchema = new mongoose.Schema({
+    title: String,
+    replies: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Reply' }],
+});
 
-app.post("/view/:id/replies", (req, res) => {
+const Question = mongoose.model('Question', questionSchema);
 
+app.get('/', async (req, res) => {
+    try {
+        const questions = await Question.find({});
+        res.render('home', { questions });
+    } catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
 
+app.get('/view', async (req, res) => {
+    try {
+        const questions = await Question.find({});
+        res.render('home', { questions });
+    } catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
 
-    const reply = new Reply({
-        reply: req.body.reply
-    });
-    reply.save((err, result) => {
-        if (err) {
-            console.log(err);
+app.get('/new', (req, res) => {
+    res.render('ask_que');
+});
 
-        }
-        else {
-            console.log(result)
-            Que.findById(req.params.id, (err, Que) => {
-                if (err) {
-                    console.lof(err);
-                } else {
+app.post('/', async (req, res) => {
+    const title = req.body.question;
+    try {
+        const ask = new Question({ title });
+        await ask.save();
+        res.redirect('/');
+    } catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
 
+app.get('/view/:id', async (req, res) => {
+    try {
+        const question = await Question.findById(req.params.id).populate('replies');
+        res.render('question', { question }); // Pass the 'question' variable to the 'question.ejs' template
+    } catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
 
-                    Que.Replies.push(result);
-                    Que.save();
-                    console.log(Que.Replies)
-                    // console.log(result)
-                    res.redirect("/")
-
-
-                }
-            })
-
-
-        }
-    })
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
+app.post('/view/:id/replies', async (req, res) => {
+    const replyText = req.body.reply;
+    try {
+        const reply = new Reply({ reply: replyText });
+        await reply.save();
+        const question = await Question.findById(req.params.id);
+        question.replies.push(reply);
+        await question.save();
+        res.redirect(`/view/${req.params.id}`);
+    } catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+    console.log(`Example app listening on port ${port}`);
+});
