@@ -16,7 +16,7 @@ const New = () => {
         event.preventDefault();
         axios.post('http://localhost:3000/', { title })
             .then(() => {
-                navigate("/");
+                navigate("/question");
             })
             .catch(error => {
                 console.error(error);
