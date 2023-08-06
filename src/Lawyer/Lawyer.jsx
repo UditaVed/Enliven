@@ -9,6 +9,7 @@ import {
   faPhone,
   faUserCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Lawyer = () => {
   return (
@@ -85,10 +86,10 @@ const Lawyer = () => {
               <div className="cards-inner-content">
                 Get legal answers from laywers. It's quick, easy and anonymous!
               </div>
-              <button className="cards-button ">
+              <Link to={"/question"}><button className="cards-button ">
                 <FontAwesomeIcon icon={faMessage} className="me-3" />
                 Ask here
-              </button>
+              </button></Link>
             </div>
           </div>
           <div className="cards card2">

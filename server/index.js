@@ -1,7 +1,7 @@
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -11,9 +11,8 @@ mongoose.connect("mongodb+srv://Ravi02rr:slrbkMeyLMxjBfs3@cluster0.pa8zqtm.mongo
     .then(() => console.log("data base connected"))
     .catch((e) => console.log(e));
 
-app.set('view engine', 'ejs');
-app.set('views', './views');
-app.use(express.static('public'));
+app.use(cors());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const replySchema = new mongoose.Schema({
@@ -32,33 +31,19 @@ const Question = mongoose.model('Question', questionSchema);
 app.get('/', async (req, res) => {
     try {
         const questions = await Question.find({});
-        res.render('home', { questions });
+        res.json(questions);
     } catch (err) {
         console.log(err);
         res.status(500).send('Internal Server Error');
     }
-});
-
-app.get('/view', async (req, res) => {
-    try {
-        const questions = await Question.find({});
-        res.render('home', { questions });
-    } catch (err) {
-        console.log(err);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-app.get('/new', (req, res) => {
-    res.render('ask_que');
 });
 
 app.post('/', async (req, res) => {
-    const title = req.body.question;
+    const title = req.body.title;
     try {
         const ask = new Question({ title });
         await ask.save();
-        res.redirect('/');
+        res.json(ask);
     } catch (err) {
         console.log(err);
         res.status(500).send('Internal Server Error');
@@ -68,7 +53,7 @@ app.post('/', async (req, res) => {
 app.get('/view/:id', async (req, res) => {
     try {
         const question = await Question.findById(req.params.id).populate('replies');
-        res.render('question', { question }); // Pass the 'question' variable to the 'question.ejs' template
+        res.json(question);
     } catch (err) {
         console.log(err);
         res.status(500).send('Internal Server Error');
@@ -83,7 +68,7 @@ app.post('/view/:id/replies', async (req, res) => {
         const question = await Question.findById(req.params.id);
         question.replies.push(reply);
         await question.save();
-        res.redirect(`/view/${req.params.id}`);
+        res.json(reply);
     } catch (err) {
         console.log(err);
         res.status(500).send('Internal Server Error');
