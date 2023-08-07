@@ -50,21 +50,28 @@
   justify-content: first baseline;
   text-align: center;
   margin-top: 2rem;
-  width: 100vb;
+  width: 100vw;
 }
 
 /* Responsive media query */
 @media screen and (max-width: 768px) {
   .titleStyle {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .linkStyle {
-      font-size: 0.8rem;
-      padding: 8px;
+    font-size: 0.8rem;
+    padding: 8px;
   }
 
   .cardStyle {
-      width: 90%;
+    width: 90%;
+  }
+
+  .newQuestionStyle {
+    justify-content: first baseline;
+    text-align: center;
+    margin-top: 2rem;
+
   }
 }
