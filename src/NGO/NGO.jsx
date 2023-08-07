@@ -42,7 +42,7 @@ const NGO = () => {
                     <a href={item.link}><div className="card car p-2 overflow-hidden h-100 shadow">
                         <img className="ngo_image card-img-top" src={item.img} />
                         <div className="card-body description">
-                            <h3 className="card-title"><b>{item.title}</b></h3>
+                            <h3 className="card-title text-black"><b>{item.title}</b></h3>
                             <p className="card-text">{item.desc}<br></br>{item.desc2}</p>
                              <p className="card-text">{item.contact}</p>
                         </div>
