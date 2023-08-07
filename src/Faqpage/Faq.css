@@ -48,7 +48,9 @@
 
 .newQuestionStyle {
   justify-content: first baseline;
+  text-align: center;
   margin-top: 2rem;
+  width: 100vb;
 }
 
 /* Responsive media query */

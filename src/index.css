@@ -2,9 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
-}
-li a{
-   border: 0 10px 10px 0 ; 
-}

@@ -28,6 +28,16 @@ const questionSchema = new mongoose.Schema({
 
 const Question = mongoose.model('Question', questionSchema);
 
+// Contact Schema
+const contactSchema = new mongoose.Schema({
+    fullName: String,
+    email: String,
+    phone: Number,
+    message: String,
+});
+
+const Contact = mongoose.model('Contact', contactSchema);
+
 app.get('/', async (req, res) => {
     try {
         const questions = await Question.find({});
@@ -69,6 +79,19 @@ app.post('/view/:id/replies', async (req, res) => {
         question.replies.push(reply);
         await question.save();
         res.json(reply);
+    } catch (err) {
+        console.log(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+// Contact Endpoint
+app.post('/contact', async (req, res) => {
+    const { fullName, email, phone, message } = req.body;
+    try {
+        const contact = new Contact({ fullName, email, phone, message });
+        await contact.save();
+        res.json(contact);
     } catch (err) {
         console.log(err);
         res.status(500).send('Internal Server Error');
