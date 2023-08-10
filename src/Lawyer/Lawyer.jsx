@@ -15,7 +15,7 @@ const Lawyer = () => {
     <div className='mainDiv'>
       <div className="bg-white">
       <Head
-      topic="LEGAL ADVICE"
+      topic="Legal Advice"
       title="Know Your Rights"
       about="Get legal help from professional "
       />

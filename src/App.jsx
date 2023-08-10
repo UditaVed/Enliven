@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App font-serif">
+    <div className="App">
     <BrowserRouter>
     <Navbar/>
     <Routes>
