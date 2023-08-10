@@ -3,6 +3,7 @@ import "./legal.css";
 import Head from '../components/Head';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMessage,
@@ -17,7 +18,7 @@ const Lawyer = () => {
       <Head
       topic="Legal Advice"
       title="Know Your Rights"
-      about="Get legal help from professional "
+      about="Get legal help from professionals"
       />
         <div className="latestAns border rounded-5 border-dark mt-5 ms-5 me-5">
           
@@ -26,7 +27,7 @@ const Lawyer = () => {
               <Col>
                 <p className="fw-bold">
                   Are domestic workers eligible for pension, paid leaves and
-                  maternity benefits?
+                  maternity benefits??
                 </p>
                 With the passing of the domestic workers (Registration, social
                 security and welfare) Act 2008 every registered domestic....
@@ -85,10 +86,12 @@ const Lawyer = () => {
               <div className="cards-inner-content">
                 Get legal answers from laywers. It's quick, easy and anonymous!
               </div>
+              <Link to="/q" className="justify-between">
               <button className="cards-button ">
-                <FontAwesomeIcon icon={faMessage} className="me-3" />
-                Ask here
-              </button>
+              <FontAwesomeIcon icon={faMessage} className="me-3" />
+              Ask here
+            </button>
+            </Link> 
             </div>
           </div>
           <div className="cards card2">

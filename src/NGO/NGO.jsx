@@ -40,7 +40,11 @@ const NGO = () => {
                     return(
                <div className="  col-11 col-md-6 col-lg-4 mx-0 mk mb-5 ">
                     <a href={item.link}><div className="card car p-2 overflow-hidden h-100 shadow">
+<<<<<<< HEAD
                         <img className="ngo_image card-img-top" src={item.img}/>
+=======
+                        <img className="ngo_image card-img-top" src={item.img} />
+>>>>>>> 33326fee476c39f460d17f6971f185112df6a0c5
                         <div className="card-body description">
                             <h3 className="card-title"><b>{item.title}</b></h3>
                             <p className="card-text">{item.desc}<br></br>{item.desc2}</p>
