@@ -1,4 +1,4 @@
-# Enliven
+# EnLiven
 ## Introduction
 This project is aimed at providing a comprehensive resource for domestic workers who have suffered abuse.
 The website will provide information on relevant laws and articles related to abuse, offer free legal assistance by connecting users with relevant NGOs and 
